@@ -1,0 +1,165 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url("45.jpg") no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+h1{
+    margin-top: 2%;
+}
+
+.login-box {
+    width: 40%;
+    padding: 2%;
+    margin-top: 5%;
+    background-color: rgb(255, 255, 255, 0.80);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 2%;
+}
+
+.login-box img {
+    width: 47%;
+    height: 47%;
+    margin-bottom: 3%;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 2% 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 7%;
+    border: none;
+    border-bottom: 2px solid #b4b4b4;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box .rdate{
+    top:-20px;
+    color:#404040;
+    font-size:15px;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color:#7b7a7a;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .login-box .user-box input:focus ~ label {
+    top: -20px;
+    left: 0;
+    color: #404040;
+    font-size: 15px;
+  }
+
+/*.login-box .user-box input::placeholder {
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    pointer-events: none;
+    transition: 0.5s;
+} */
+
+.login-box .login_btn {
+    background-color: #ffb22b;
+    color: white;
+    font-size: 16px;
+    border-color: #ffb22b;
+    width: 95%;
+    height: 20%;
+    border-radius: 4%;
+    padding: 3px 3px;
+    cursor: pointer;
+}
+
+.login-box #export{
+    width: 40%;
+}
+
+table {
+    border: '2';
+    border: 1px solid black;
+    color: black;
+    padding: 3px;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+th,
+td {
+    border: '2';
+    border: 1px solid black;
+    color: black;
+    padding: 3px;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+@media (max-width:991px) {
+    .login-box {
+        margin-top: 11%;
+        width: 60%;
+        padding:3%;
+    }
+    h1{
+        margin-top: 5%;
+    }
+}
+
+@media (max-width:768px) {
+    .login-box {
+        margin-top: 16%;
+        width: 60%;
+        padding:4%;
+    }
+    h1{
+        font-size: 30px;
+        margin-top: 7%;
+    }
+    .login-box #export{
+        width: 45%;
+    }
+}
+
+@media (max-width:450px) {
+    .login-box {
+        margin-top: 24%;
+        width: 90%;
+        padding:5%;
+    }
+    .login-box h2 {
+        font-size: 35px;
+        margin: 4% 0 10%;
+    }
+    h1{
+        font-size: 30px;
+        margin-top: 10%;
+    }
+    .login-box #display{
+        display: none;
+    }
+    .login-box #export{
+        width: 90%;
+    }
+    .login-box .user-box{
+        margin-bottom: 6%;
+    }
+}
